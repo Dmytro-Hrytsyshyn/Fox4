@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAB32O9UOGZuDnnZ7Opovc9zAAAAAAAAAAB52+2EAAAAAE+Tngt63O5eAAAAAAAAAAB62u3aedrucgAAAAB62u3eLlJYEnra7Pd52OyZAAAAAD1ueB8AAAAAedns+Wm9z3N52ezvet3uWz1ueB8tUVcMLVFaGHnZ7P942e19PGx3GHra7PB42OxyAAAAAAAAAAB52u2Nedns8BktMAdpvc9+etrtbl+ru4152ez8T5OpCwAAAAA3Y2oPedns/2i9zn552ex5AAAAAHjZ7k4AAAAAAAAAABQkJyUAAAAAaLzMc3nZ7FQUJCclAAAAAAAAAABovM1zAAAAABQkKAVpvc+LAAAAAAAAAAB42O50edns0wAAAAAAAAAAedns7S1RWiR52e23edrvNQAAAAB41+tIedns/wAAAAAAAAAAAAAAAAAAAAB42e2PX6y8S3ra7KkFCQkBedntwjdjbTMAAAAAAAAAAHna7L1frLxLeNjscXXU6TV42e2USoeURRMjJQNjs8E1SYWSHnnZ7P9WmqhPedns0HTU7iQAAAAAZrbHUAAAAAAAAAAAedjstlaaqE952ezQeNnsrgAAAAB62u3QednsrwAAAAA9bXZ/LVFZPD1tdn8AAAAAAAAAAHnY7MM9bXZDAAAAADxseBAtUVk8PW12fz1tdmM8bHgQedns/wAAAAB52e3Dedns2nfX6D9WmqlPednttgAAAAAAAAAAAAAAAEyJlUJ52ezad9foP1aaqU952ez/TIiTO2OzxDUAAAAAFCQnC3vb7jZ52ez9AAAAAF+su2R52e2sAAAAAFSYpi152ezYAAAAAHjX7HR42OyfFCQnCwAAAAAAAAAAAAAAAAAAAAB42O50ab3OXAAAAAAAAAAAeNjuNmm9z4t52ezbAAAAAAAAAAAAAAAAedrt3wAAAAAAAAAAAAAAAHnZ7HkAAAAAAAAAAAAAAAAAAAAAFCQoJQAAAAAAAAAAAAAAABQkKCUAAAAAAAAAAAAAAAAAAAAAFCQoBWm9z4t62u3wedrucgAAAAAAAAAAedrsjXnZ7PAaLjIGab3PfnfY7W5grLuNedns/E+TngsAAAAAOGZuDnnZ7P9ovc+ALVFaGHnZ7P942e19AAAAADxsdjA4aHgIedns12m9znx52uzxedruTTxsdjAtUVgYLlJYEnra7Pd52OyZPGx0EHfY7FQ3Y2oPedns6mi9znMAAAAAAAAAAHjY6oUAAAAAT5OpC3rc7l4AAAAAAAAAAHra7Nx42OxyAAAAAHra7N4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3fYAAJ17AABznQAA//4AAO13AACruwAA19IAAH7+AACb2wAA7bcAAP53AAD//gAAc5wAAL15AADd9gAA//8AAA==">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAB32O9UOGZuDnnZ7Opovc9zAAAAAAAAAAB52+2EAAAAAE+Tngt63O5eAAAAAAAAAAB62u3aedrucgAAAAB62u3eLlJYEnra7Pd52OyZAAAAAD1ueB8AAAAAedns+Wm9z3N52ezvet3uWz1ueB8tUVcMLVFaGHnZ7P942e19PGx3GHra7PB42OxyAAAAAAAAAAB52u2Nedns8BktMAdpvc9+etrtbl+ru4152ez8T5OpCwAAAAA3Y2oPedns/2i9zn552ex5AAAAAHjZ7k4AAAAAAAAAABQkJyUAAAAAaLzMc3nZ7FQUJCclAAAAAAAAAABovM1zAAAAABQkKAVpvc+LAAAAAAAAAAB42O50edns0wAAAAAAAAAAedns7S1RWiR52e23edrvNQAAAAB41+tIedns/wAAAAAAAAAAAAAAAAAAAAB42e2PX6y8S3ra7KkFCQkBedntwjdjbTMAAAAAAAAAAHna7L1frLxLeNjscXXU6TV42e2USoeURRMjJQNjs8E1SYWSHnnZ7P9WmqhPedns0HTU7iQAAAAAZrbHUAAAAAAAAAAAedjstlaaqE952ezQeNnsrgAAAAB62u3QednsrwAAAAA9bXZ/LVFZPD1tdn8AAAAAAAAAAHnY7MM9bXZDAAAAADxseBAtUVk8PW12fz1tdmM8bHgQedns/wAAAAB52e3Dedns2nfX6D9WmqlPednttgAAAAAAAAAAAAAAAEyJlUJ52ezad9foP1aaqU952ez/TIiTO2OzxDUAAAAAFCQnC3vb7jZ52ez9AAAAAF+su2R52e2sAAAAAFSYpi152ezYAAAAAHjX7HR42OyfFCQnCwAAAAAAAAAAAAAAAAAAAAB42O50ab3OXAAAAAAAAAAAeNjuNmm9z4t52ezbAAAAAAAAAAAAAAAAedrt3wAAAAAAAAAAAAAAAHnZ7HkAAAAAAAAAAAAAAAAAAAAAFCQoJQAAAAAAAAAAAAAAABQkKCUAAAAAAAAAAAAAAAAAAAAAFCQoBWm9z4t62u3wedrucgAAAAAAAAAAedrsjXnZ7PAaLjIGab3PfnfY7W5grLuNedns/E+TngsAAAAAOGZuDnnZ7P9ovc+ALVFaGHnZ7P942e19AAAAADxsdjA4aHgIedns12m9znx52uzxedruTTxsdjAtUVgYLlJYEnra7Pd52OyZPGx0EHfY7FQ3Y2oPedns6mi9znMAAAAAAAAAAHjY6oUAAAAAT5OpC3rc7l4AAAAAAAAAAHra7Nx42OxyAAAAAHra7N4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3fYAAJ17AABznQAA//4AAO13AACruwAA19IAAH7+AACb2wAA7bcAAP53AAD//gAAc5wAAL15AADd9gAA//8AAA==" />
     <title>Vyshyvanka Vibes</title>
     
     <script type="module" crossorigin src="/Fox4/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Fox4/assets/index-686c5fa3.css">
+    <link rel="stylesheet" href="/Fox4/assets/index-863c59b2.css">
   </head>
 
   <body>
@@ -234,11 +242,211 @@
   
   </div>
   </section>
-      
+      <section class="our-collection">
+  <div class="container our-collection-container">
+    <h2 class="our-collection-title">Our collection</h2>
+    <ul class="our-collection-list">
+      <li class="our-collection-item">
+        <div class="our-collection-picture">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                /img/our-collection/1-desk1280.webp    1x,
+                /img/our-collection/1-desk1280@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /img/our-collection/1tab.webp    1x,
+                /img/our-collection/1tab@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /img/our-collection/1mob.webp    1x,
+                /img/our-collection/1mob@2x.webp 2x
+              "
+            />
+            <img src="/img/our-collection/1-desk1280.webp" alt="vyshyvanka" />
+          </picture>
+        </div>
+        <div class="our-collection-text">
+          <h3 class="our-collection-item-name">
+            AUGUST Poltava women's blouseRING
+          </h3>
+          <p class="our-collection-item-price">3300 UAH</p>
+        </div>
+      </li>
+      <li class="our-collection-item">
+        <div class="our-collection-picture">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                /img/our-collection/2-desk1280.webp    1x,
+                /img/our-collection/2-desk1280@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /img/our-collection/2tab.webp    1x,
+                /img/our-collection/2tab@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /img/our-collection/2mob.webp    1x,
+                /img/our-collection/2mob@2x.webp 2x
+              "
+            />
+            <img src="/img/our-collection/2-desk1280.webp" alt="vyshyvanka" />
+          </picture>
+        </div>
+        <div class="our-collection-text">
+          <h3 class="our-collection-item-name">Women's blouse Gorgany</h3>
+          <p class="our-collection-item-price">3350 UAH</p>
+        </div>
+      </li>
+      <li class="our-collection-item">
+        <div class="our-collection-picture">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                /img/our-collection/3-desk1280.webp    1x,
+                /img/our-collection/3-desk1280@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /img/our-collection/3tab.webp    1x,
+                /img/our-collection/3tab@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /img/our-collection/3mob.webp    1x,
+                /img/our-collection/3mob@2x.webp 2x
+              "
+            />
+            <img src="/img/our-collection/3-desk1280.webp" alt="vyshyvanka" />
+          </picture>
+        </div>
+        <div class="our-collection-text">
+          <h3 class="our-collection-item-name">Women's blouse Crimea</h3>
+          <p class="our-collection-item-price">4000 UAH</p>
+        </div>
+      </li>
+      <li class="our-collection-item">
+        <div class="our-collection-picture">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                /img/our-collection/4-desk1280.webp    1x,
+                /img/our-collection/4-desk1280@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /img/our-collection/4tab.webp    1x,
+                /img/our-collection/4tab@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /img/our-collection/4mob.webp    1x,
+                /img/our-collection/4mob@2x.webp 2x
+              "
+            />
+            <img src="/img/our-collection/4-desk1280.webp" alt="vyshyvanka" />
+          </picture>
+        </div>
+        <div class="our-collection-text">
+          <h3 class="our-collection-item-name">Men's shirt Verkhovina</h3>
+          <p class="our-collection-item-price">3100 UAH</p>
+        </div>
+      </li>
+      <li class="our-collection-item">
+        <div class="our-collection-picture">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                /img/our-collection/5-desk1280.webp    1x,
+                /img/our-collection/5-desk1280@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /img/our-collection/5tab.webp    1x,
+                /img/our-collection/5tab@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /img/our-collection/5mob.webp    1x,
+                /img/our-collection/5mob@2x.webp 2x
+              "
+            />
+            <img src="/img/our-collection/5-desk1280.webp" alt="vyshyvanka" />
+          </picture>
+        </div>
+        <div class="our-collection-text">
+          <h3 class="our-collection-item-name">Mountain men's shirt</h3>
+          <p class="our-collection-item-price">3300 UAH</p>
+        </div>
+      </li>
+      <li class="our-collection-item">
+        <div class="our-collection-picture">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                /img/our-collection/6-desk1280.webp    1x,
+                /img/our-collection/6-desk1280@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /img/our-collection/6tab.webp    1x,
+                /img/our-collection/6tab@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /img/our-collection/6mob.webp    1x,
+                /img/our-collection/6mob@2x.webp 2x
+              "
+            />
+            <img src="/img/our-collection/6-desk1280.webp" alt="vyshyvanka" />
+          </picture>
+        </div>
+        <div class="our-collection-text">
+          <h3 class="our-collection-item-name">Men's shirt Yasen</h3>
+          <p class="our-collection-item-price">1700 UAH</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
       
       
     </main>
-
     <!-- ===== FOOTER ===== -->
 <footer>
 
