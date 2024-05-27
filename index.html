@@ -20,7 +20,7 @@
     <title>Vyshyvanka Vibes</title>
     
     <script type="module" crossorigin src="/Fox4/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Fox4/assets/index-3735c51a.css">
+    <link rel="stylesheet" href="/Fox4/assets/index-6126307a.css">
   </head>
 
   <body>
@@ -391,7 +391,72 @@
   </div>
 </section>
 
-      
+      <div class="order-container" id="order-container">
+  <div class="order-girl-green"></div>
+  <div class="order-form-desk">
+    <div class="order-input-fields-set">
+      <h2 class="order-form-header">
+        <span class="order-yellow-text">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form action="" class="order-form">
+        <div class="order-form-input-wrapper">
+          <input
+            class="order-form-input-field"
+            type="text"
+            name="user-name"
+            placeholder="Enter your full name"
+            pattern="[a-zA-Zа-яА-ЯіІїЇєЄ']+"
+            required
+          />
+          <input
+            class="order-form-input-field"
+            type="email"
+            name="user-email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <textarea
+            class="order-form-message"
+            name="user-comment"
+            placeholder="Comments"
+          ></textarea>
+        </div>
+        <button class="order-form-button" type="submit">
+          Send
+          <svg class="order-btn-icon" width="26" height="10">
+            <use
+              class="order-btn-arrow"
+              href="../img/svg-icons/svg.svg#icon-untitled"
+            ></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="order-item-img">
+      <picture>
+        <source
+          srcset="
+            ../img/your-order/your-order-desktop1280.webp    1x,
+            ../img/your-order/your-order-desktop1280@2x.webp 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ../img/your-order/your-order-tablet.webp    1x,
+            ../img/your-order/your-order-tablet@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <img src="../img/your-order/your-order-desktop1280.webp" alt="jacket" />
+      </picture>
+    </div>
+  </div>
+</div>
+
       
     </main>
     <!-- ===== FOOTER ===== -->
