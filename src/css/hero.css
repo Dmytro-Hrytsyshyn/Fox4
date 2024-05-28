@@ -1,6 +1,7 @@
 /* ========HERO */
 .hero {
   margin: 84px auto 40px auto;
+  padding-bottom: 0;
 }
 .hero-ul {
   display: flex;
@@ -33,18 +34,17 @@
   height: 49px;
   background-color: inherit;
   margin: 20px auto 40px auto;
-}
-.hero-button:focus,
-.hero-button:hover {
-  border-color: #ecd979;
-}
-.hero-button-order {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #fcf9f9;
 }
+.hero-button:focus,
+.hero-button:hover {
+  border-color: #ecd979;
+}
+
 .hero-order-icon {
   fill: #ecd979;
 }
@@ -104,8 +104,6 @@
     padding: 14px 39px;
     width: 168px;
     height: 50px;
-  }
-  .hero-button-order {
     font-size: 16px;
   }
 }
@@ -125,7 +123,7 @@
   .hero-title-block {
     margin: 0 0 0 40px;
     justify-content: space-between;
-    max-width: 740px;
+    min-width: 740px;
   }
   .hero-title-text {
     margin-right: 115px;
