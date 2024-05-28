@@ -20,7 +20,7 @@
     <title>Vyshyvanka Vibes</title>
     
     <script type="module" crossorigin src="/Fox4/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Fox4/assets/index-a0c692a8.css">
+    <link rel="stylesheet" href="/Fox4/assets/index-e0907195.css">
   </head>
 
   <body>
@@ -446,65 +446,67 @@
   </div>
 </section>
 
-      <div class="order-container" >
-  <div class="order-girl-green"></div>
-  <div class="order-form-desk">
-    <div class="order-input-fields-set">
-      <h2 class="order-form-header" id="order-container">
-        <span class="order-yellow-text">Your order</span> is our priority:
-        Personalized approach and quality of service
-      </h2>
-      <form class="order-form">
-        <div class="order-form-input-wrapper">
-          <input
-            class="order-form-input-field"
-            type="text"
-            name="user-name"
-            placeholder="Enter your full name"
-            pattern="[a-zA-Zа-яА-ЯіІїЇєЄ']+"
-            required
+      <section class="your-order" id="order-container">
+  <div class="order-container">
+    <div class="order-girl-green"></div>
+    <div class="container order-form-desk">
+      <div class="order-input-fields-set">
+        <h2 class="order-form-header">
+          <span class="order-yellow-text">Your order</span> is our priority:
+          Personalized approach and quality of service
+        </h2>
+        <form class="order-form">
+          <div class="order-form-input-wrapper">
+            <input
+              class="order-form-input-field"
+              type="text"
+              name="user-name"
+              placeholder="Enter your full name"
+              pattern="[a-zA-Zа-яА-ЯіІїЇєЄ']+"
+              required
+            />
+            <input
+              class="order-form-input-field"
+              type="email"
+              name="user-email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <textarea
+              class="order-form-message"
+              name="user-comment"
+              placeholder="Comments"
+            ></textarea>
+          </div>
+          <button class="order-form-button" type="submit">
+            Send
+            <svg class="order-btn-icon" width="26" height="10">
+              <use
+                class="order-btn-arrow"
+                href="/Fox4/assets/svg-293a857e.svg#icon-untitled"
+              ></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="order-item-img">
+        <picture>
+          <source
+            srcset="/Fox4/assets/your-order-desktop1280-b33ee654.webp 1x, /Fox4/assets/your-order-desktop1280@2x-9c0ceb4b.webp 2x"
+            media="(min-width: 1280px)"
           />
-          <input
-            class="order-form-input-field"
-            type="email"
-            name="user-email"
-            placeholder="Enter your email"
-            required
+          <source
+            srcset="/Fox4/assets/your-order-tablet-31d60d33.webp 1x, /Fox4/assets/your-order-tablet@2x-a08dce61.webp 2x"
+            media="(min-width: 768px)"
           />
 
-          <textarea
-            class="order-form-message"
-            name="user-comment"
-            placeholder="Comments"
-          ></textarea>
-        </div>
-        <button class="order-form-button" type="submit">
-          Send
-          <svg class="order-btn-icon" width="26" height="10">
-            <use
-              class="order-btn-arrow"
-              href="/Fox4/assets/svg-293a857e.svg#icon-untitled"
-            ></use>
-          </svg>
-        </button>
-      </form>
-    </div>
-    <div class="order-item-img">
-      <picture>
-        <source
-          srcset="/Fox4/assets/your-order-desktop1280-b33ee654.webp 1x, /Fox4/assets/your-order-desktop1280@2x-9c0ceb4b.webp 2x"
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="/Fox4/assets/your-order-tablet-31d60d33.webp 1x, /Fox4/assets/your-order-tablet@2x-a08dce61.webp 2x"
-          media="(min-width: 768px)"
-        />
-
-        <img src="/Fox4/assets/your-order-desktop1280-b33ee654.webp" alt="jacket" />
-      </picture>
+          <img src="/Fox4/assets/your-order-desktop1280-b33ee654.webp" alt="jacket" />
+        </picture>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
       <section class="section-testimonials" id="testimonials">
   
